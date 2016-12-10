@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       Yahoo Nachrichten Cleanup
-// @version    1.0.4
+// @version    1.0.5
 // @namespace  https://github.com/Brawl345/Yahoo-Nachrichten-Cleanup
 // @author	   iCON, Edward (orig)
 // @description  Entfernt nervige Nachrichtenquellen von Yahoo! Nachrichten
@@ -14,7 +14,7 @@
 setInterval(removeSpam, 2000);
 function removeSpam() {
 var spanTags = document.getElementsByTagName('span');
-var spamNames = ['Abendzeitung', 'Business Insider DE', 'Yahoo Nachrichten', 'Yahoo Nachrichten Deutschland', 'Yahoo Video, Bitprojects', 'Yahoo, spot on news', 'Yahoo', 'Cover Media Video', 'Euronews Videos', 'WENN', 'Yahoo Stars', 'Zoomin.tv', 'yahoo-nachrichten-de', 'BLZ', 'KSTA', 'Yahoo Stars Deutschland'];
+var spamNames = ['Abendzeitung', 'Business Insider DE', 'Yahoo Nachrichten', 'Yahoo Nachrichten Deutschland', 'Yahoo Style Deutschland', 'Yahoo Sport Deutschland', 'Formel 1 | Yahoo Sports DE', 'Yahoo Video, Bitprojects', 'Yahoo, spot on news', 'Yahoo', 'Cover Media Video', 'Euronews Videos', 'WENN', 'Yahoo Stars', 'Zoomin.tv', 'yahoo-nachrichten-de', 'BLZ', 'KSTA', 'Yahoo Stars Deutschland'];
 var found;
 for (var i = 0; i < spanTags.length; i++) {
   if (contains(spamNames, spanTags[i].textContent)) {
