@@ -10,20 +10,28 @@ Installiere einen Script-Manager deiner Wahl:
 Danach einfach das [Userscript](https://raw.githubusercontent.com/Brawl345/Yahoo-Nachrichten-Cleanup/master/cleanup.user.js) installieren.
 
 ## Changelog
+### v1.0.5
+* + Yahoo Style Deutschland
+* + Yahoo Sport Deutschland
+* + Formel 1 | Yahoo Sports DE
+
+### v1.0.4
+* + Yahoo Nachrichten Deutschland
+
 ### v1.0.3
-* "Yahoo Stars Deutschland" hinzugefügt
+* + Yahoo Stars Deutschland
 
 ### v1.0.2
-* "yahoo-nachrichten.de" hinzugefügt
-* "BLZ" hinzugefügt
-* "KSTA" hinzugefügt
+* + yahoo-nachrichten.de
+* + BLZ
+* + KSTA
 
 ### v1.0.1
-* "Business Insider" zu "Business Insider DE" korrigiert
-* "Euronews Videos" hinzugefügt
-* "WENN" hinzugefügt
-* "Yahoo Stars" hinzugefügt
-* "Zoomin.tv" hinzugefügt
+* "Business Insider" -> "Business Insider DE"
+* + Euronews Videos
+* + WENN
+* + Yahoo Stars
+* + Zoomin.tv
 
 ### v1.0
 * Erste Veröffentlichung
