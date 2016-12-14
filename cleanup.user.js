@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       Yahoo Nachrichten Cleanup
-// @version    1.0.5
+// @version    1.1.0
 // @namespace  https://github.com/Brawl345/Yahoo-Nachrichten-Cleanup
 // @author	   iCON, Edward (orig)
 // @description  Entfernt nervige Nachrichtenquellen von Yahoo! Nachrichten
@@ -11,14 +11,14 @@
 // @grant          unsafeWindow
 // ==/UserScript==
 
-setInterval(removeSpam, 2000);
+setInterval(removeSpam, 3000);
 function removeSpam() {
-var spanTags = document.getElementsByTagName('span');
-var spamNames = ['Abendzeitung', 'Business Insider DE', 'Yahoo Nachrichten', 'Yahoo Nachrichten Deutschland', 'Yahoo Style Deutschland', 'Yahoo Sport Deutschland', 'Formel 1 | Yahoo Sports DE', 'Yahoo Video, Bitprojects', 'Yahoo, spot on news', 'Yahoo', 'Cover Media Video', 'Euronews Videos', 'WENN', 'Yahoo Stars', 'Zoomin.tv', 'yahoo-nachrichten-de', 'BLZ', 'KSTA', 'Yahoo Stars Deutschland'];
+var divTags = document.getElementsByTagName('div');
+var divNames = ['Abendzeitung', 'Business Insider DE', 'Yahoo Nachrichten', 'Yahoo Nachrichten Deutschland', 'Yahoo Style Deutschland', 'Yahoo Sport Deutschland', 'Formel 1 | Yahoo Sports DE', 'Yahoo Video, Bitprojects', 'Yahoo, spot on news', 'Yahoo', 'Cover Media Video', 'Euronews Videos', 'WENN', 'Yahoo Stars', 'Zoomin.tv', 'yahoo-nachrichten-de', 'BLZ', 'KSTA', 'Yahoo Stars Deutschland', 'Jan Rübel'];
 var found;
-for (var i = 0; i < spanTags.length; i++) {
-  if (contains(spamNames, spanTags[i].textContent)) {
-    found = spanTags[i];
+for (var i = 0; i < divTags.length; i++) {
+  if (contains(divNames, divTags[i].textContent)) {
+    found = divTags[i];
     parentBlock = getParent(getParent(getParent(found)));
     removeAllChildren(parentBlock);
   }

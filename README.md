@@ -10,6 +10,11 @@ Installiere einen Script-Manager deiner Wahl:
 Danach einfach das [Userscript](https://raw.githubusercontent.com/Brawl345/Yahoo-Nachrichten-Cleanup/master/cleanup.user.js) installieren.
 
 ## Changelog
+### v1.1.0
+* Unterstützung des neuen Designs
+* Fix für Bilder
+* + Jan Rübel
+
 ### v1.0.5
 * + Yahoo Style Deutschland
 * + Yahoo Sport Deutschland
